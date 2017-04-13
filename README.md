@@ -30,8 +30,9 @@ The estimated deployment time from start to finish is 20-30 minutes.
 ### How to use the Terraform plan to deploy Rancher server and Rancher hosts
 
 #### Version advisories
+Tested with the following versions.
 
-* RancherOS v0.9.1
+* RancherOS v1.0.0
 * Rancher server v1.5.3
 * Rancher agent v1.2.1
 
