@@ -59,6 +59,7 @@ resource "aws_launch_configuration" "rancher_hst" {
   instance_type               = "${var.hst_size}"
   key_name                    = "${var.key_name}"
   security_groups             = ["${aws_security_group.rancher_hst.id}"]
+  iam_instance_profile        = "${aws_iam_instance_profile.rancher.id}"
   associate_public_ip_address = true
 
   lifecycle {

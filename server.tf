@@ -54,6 +54,7 @@ resource "aws_launch_configuration" "rancher_srv" {
   instance_type               = "${var.srv_size}"
   key_name                    = "${var.key_name}"
   security_groups             = ["${aws_security_group.rancher_srv.id}"]
+  iam_instance_profile        = "${aws_iam_instance_profile.rancher.id}"
   associate_public_ip_address = true
 
   lifecycle {
