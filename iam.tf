@@ -1,5 +1,7 @@
 ## IAM EC2 policy + role + profile
 
+# IAM role policy
+
 resource "aws_iam_role_policy" "rancher" {
   name = "rancher"
   role = "${aws_iam_role.rancher.id}"
@@ -26,6 +28,8 @@ resource "aws_iam_role_policy" "rancher" {
 EOF
 }
 
+# IAM role
+
 resource "aws_iam_role" "rancher" {
   name = "rancher"
   path = "/"
@@ -46,6 +50,8 @@ resource "aws_iam_role" "rancher" {
 }
 EOF
 }
+
+# IAM instance profile
 
 resource "aws_iam_instance_profile" "rancher" {
   name  = "rancher"
