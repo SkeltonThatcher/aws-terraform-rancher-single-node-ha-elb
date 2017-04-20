@@ -12,6 +12,7 @@ The Terraform plan is designed to be applied in two stages. It will build out an
 * SSL enabled elastic load balancer + listeners
 * Launch configuration + fixed Multi-AZ auto-scaling group of x1 instance for the Rancher server
 * Launch configuration + fixed Multi-AZ auto-scaling group of a specified instance amount for the Rancher hosts
+* EC2 IAM policy role for the Rancher server & hosts, granting full access to EC2, S3, Route 53, SNS & Cloudwatch
 * RancherOS instance with active Docker running a password protected deployment of Rancher server
 * RancherOS instances with active Docker running the Rancher host agent
 * Route 53 DNS alias record for the ELB
