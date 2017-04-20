@@ -55,6 +55,7 @@ resource "aws_db_instance" "rancher" {
   vpc_security_group_ids    = ["${aws_security_group.rancher_db.id}"]
   final_snapshot_identifier = "${var.env_name}-snapshot"
   skip_final_snapshot       = "${var.db_final_snapshot}"
+
   #parameter_group_name      = "rancher-pg"
 }
 
@@ -62,43 +63,52 @@ resource "aws_db_instance" "rancher" {
 #  name   = "rancher-pg"
 #  family = "mysql5.6"
 
+
 #  parameter {
 #    name  = "character_set_client"
 #    value = "utf8"
 #  }
+
 
 #  parameter {
 #    name  = "character_set_connection"
 #    value = "utf8"
 #  }
 
+
 #  parameter {
 #    name  = "character_set_database"
 #    value = "utf8"
 #  }
+
 
 #  parameter {
 #    name  = "character_set_filesystem"
 #    value = "utf8"
 #  }
 
+
 #  parameter {
 #    name  = "character_set_results"
 #    value = "utf8"
 #  }
+
 
 #  parameter {
 #    name  = "character_set_server"
 #    value = "utf8"
 #  }
 
+
 #  parameter {
 #    name  = "collation_connection"
 #    value = "utf8_general_ci"
 #  }
+
 
 #  parameter {
 #    name  = "collation_server"
 #    value = "utf8_general_ci"
 #  }
 #}
+
