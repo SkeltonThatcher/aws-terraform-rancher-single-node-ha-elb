@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
+    bucket = "rancher-terraform-aws"
+    key    = "gocd"
     region = "eu-west-1"
   }
 }

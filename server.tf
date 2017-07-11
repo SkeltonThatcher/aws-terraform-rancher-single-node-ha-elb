@@ -86,10 +86,6 @@ resource "aws_autoscaling_group" "rancher_srv" {
     propagate_at_launch = true
   }
 
-  lifecycle {
-    create_before_destroy = true
-  }
-
   depends_on = ["aws_launch_configuration.rancher_srv"]
 
   provisioner "local-exec" {
