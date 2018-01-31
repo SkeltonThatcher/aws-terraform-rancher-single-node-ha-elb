@@ -42,7 +42,6 @@ Tested with the following versions.
 * Clone the repo
 * Create an EC2 keypair in AWS
 * Create an S3 bucket to hold remote state
-* Create an S3 bucket to hold remote state
 * Update `backend.tf` with the S3 bucket name and region
 * Run `terraform init` to initialise remote state
 * Create `terraform.tfvars` in the root of the cloned folder (see `terraform.tfvars.example`)
